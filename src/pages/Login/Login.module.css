@@ -1,0 +1,23 @@
+.login {
+    margin: 5em auto;
+    text-align: center;
+    color: #dadada; /* Cor do texto */
+    background: #313338; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: 400px;
+}
+
+.login p {
+    color: #dadada; /* Cor do texto dos parágrafos */
+}
+
+.login input {
+    width: 100%; /* Ocupa toda a largura da caixa */
+    padding: 0.7em; /* Aumenta o espaçamento interno */
+    border: 1px solid #1E1F22; /* Cor da borda */
+    border-radius: 16px; /* Bordas arredondadas */
+    background-color: #1E1F22; /* Cor de fundo */
+    color: #dadada; /* Cor do texto */
+}

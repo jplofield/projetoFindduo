@@ -1,0 +1,25 @@
+.register {
+    margin: 3em auto; /* Adiciona espaçamento superior e centraliza horizontalmente */
+    text-align: center;
+    color: #dadada; /* Cor do texto */
+    background: #313338; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: 450px; /* Aumenta ligeiramente a largura da caixa */
+    max-width: 90%; /* Garante que a largura se ajuste em telas menores */
+  }
+  
+  .register p {
+    color: #dadada;
+  }
+  
+  .register input {
+    padding: 0.7em; /* Aumenta o espaçamento interno */
+    margin-bottom: .5em; /* Maior espaço entre os campos */
+    border: 1px solid #1E1F22; /* Cor da borda */
+    border-radius: 16px; /* Bordas arredondadas */
+    background-color: #1E1F22; /* Cor de fundo */
+    color: #dadada; /* Cor do texto */
+  }
+  

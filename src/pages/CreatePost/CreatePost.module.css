@@ -1,0 +1,18 @@
+.create_post {
+    margin: 5em auto;
+    text-align: center;
+    color: #dadada; /* Cor do texto */
+    background: #313338; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: 400px;}
+
+.create_post h2 {
+    font-size: 2.2em;
+}
+
+.create_post p {
+    color: #aaa;
+    margin-bottom: 2em;
+}
