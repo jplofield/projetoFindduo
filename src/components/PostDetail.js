@@ -19,12 +19,15 @@ const PostDetail = ({ post }) => {
           // Busca o documento do usuário no Firestore
           const userDoc = await getDoc(userRef);
 
+          const userPhoto = userDoc.data().photoURL;
+
           // Verifica se o documento do usuário existe
           if (userDoc.exists()) {
             // Define a URL da foto de perfil no estado photoURL. Se não houver uma foto, define uma imagem padrão
             setPhotoURL(
-              userDoc.data().photoURL ||
-                "https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360"
+              userPhoto && userPhoto.trim()
+                ? userPhoto
+                : "https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360"
             );
           }
         } catch (error) {
@@ -41,7 +44,10 @@ const PostDetail = ({ post }) => {
     <div className={styles.post_detail}>
       <div className={styles.createdBy}>
         <img
-          src={photoURL}
+          src={
+            photoURL ||
+            "https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360"
+          }
           alt={`Foto de ${post.createdBy}`}
           className={styles.avatar}
         />

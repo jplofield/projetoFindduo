@@ -54,7 +54,7 @@ const CreatePost = () => {
 
   return (
     <div className={styles.create_post}>
-      <h2>Criar post</h2>
+      <h2>Criar publicação</h2>
       <p>Compartilhe suas conquistas com outros jogadores!</p>
       <form onSubmit={handleSubmit}>
         <label>
@@ -101,7 +101,7 @@ const CreatePost = () => {
           />
         </label>
         {!response.loading && (
-          <button className="btn btn-outline">Cadastrar</button>
+          <button className="btn btn-outline">Publicar</button>
         )}
         {response.loading && (
           <button

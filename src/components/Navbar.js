@@ -28,7 +28,7 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
-            Home
+            Início
           </NavLink>
         </li>
         {!user && (
@@ -58,7 +58,7 @@ const Navbar = () => {
                 to="/posts/create"
                 className={({ isActive }) => (isActive ? styles.active : "")}
               >
-                Novo post
+                Nova publicação
               </NavLink>
             </li>
             <li>
@@ -66,7 +66,7 @@ const Navbar = () => {
                 to="/dashboard"
                 className={({ isActive }) => (isActive ? styles.active : "")}
               >
-                Dashboard
+                Minhas publicações
               </NavLink>
             </li>
             <li>

@@ -21,13 +21,24 @@ const Post = () => {
           const userDoc = await getDoc(userRef);
 
           if (userDoc.exists()) {
+            const userPhoto = userDoc.data().photoURL; // Obtém a URL da foto
             setPhotoURL(
-              userDoc.data().photoURL ||
-                "https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360"
+              userPhoto && userPhoto.trim()
+                ? userPhoto
+                : "https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360"
+            );
+          } else {
+            // Caso o documento do usuário não exista, define a imagem padrão
+            setPhotoURL(
+              "https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360"
             );
           }
         } catch (error) {
           console.error("Erro ao buscar foto do usuário:", error);
+          // Em caso de erro, define a imagem padrão
+          setPhotoURL(
+            "https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg?w=360"
+          );
         }
       }
     };
@@ -38,6 +49,7 @@ const Post = () => {
   if (loading) return <p>Carregando post...</p>;
 
   if (!post) return <p>Post não encontrado.</p>;
+  console.log("Foto do usuário:", photoURL);
 
   return (
     <div className={styles.post_container}>

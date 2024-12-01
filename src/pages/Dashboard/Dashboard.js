@@ -21,16 +21,15 @@ const Dashboard = () => {
 
   return (
     <div className={styles.dashboard}>
-      <h2>Dashboard</h2>
-      <p>Gerencie os seus posts</p>
+      <h2>Gerencie suas publicações</h2>
       {posts && posts.length === 0 ? (
         <div className={styles.noposts}>
-          <p>Não foram encontrados posts</p>
+          <p>Ops... está vazio.</p>
           <Link
             to="/posts/create"
             className="btn btn-outline"
           >
-            Criar primeiro post
+            Criar primeira publicação
           </Link>
         </div>
       ) : (
