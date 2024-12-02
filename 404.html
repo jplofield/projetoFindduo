@@ -10,8 +10,13 @@
   </head>
   <body>
     <script>
-      // Redireciona para a rota correta
-      window.location.href = "/";
+      // Verifica se o caminho está correto e redireciona para o index.html
+      var redirectTo = window.location.pathname.replace("/projetoFindduo", "");
+      window.location.href =
+        "/projetoFindduo/index.html" +
+        redirectTo +
+        window.location.search +
+        window.location.hash;
     </script>
   </body>
 </html>
