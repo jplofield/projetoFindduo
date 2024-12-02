@@ -10,13 +10,11 @@
   </head>
   <body>
     <script>
-      // Verifica se o caminho está correto e redireciona para o index.html
-      var redirectTo = window.location.pathname.replace("/projetoFindduo", "");
-      window.location.href =
-        "/projetoFindduo/index.html" +
-        redirectTo +
-        window.location.search +
-        window.location.hash;
+      // Verifica se o caminho não é a rota base ou já é resolvível
+      if (window.location.pathname !== "/projetoFindduo/") {
+        // Redireciona para o index.html mantendo a rota original
+        window.location.replace("/projetoFindduo" + window.location.pathname);
+      }
     </script>
   </body>
 </html>
