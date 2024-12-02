@@ -10,19 +10,25 @@
   </head>
   <body>
     <script>
-      // Verifica se já está na base do projeto ou em uma página resolvível
-      const path = window.location.pathname;
-      if (!path.startsWith("/projetoFindduo") || path === "/projetoFindduo/") {
-        // Não redireciona se já estiver na base ou na página inicial
-        return;
-      }
+      (function () {
+        const path = window.location.pathname;
 
-      // Redireciona para o index.html do projeto, preservando o restante da rota
-      window.location.replace(
-        "/projetoFindduo/index.html" +
-          window.location.search +
-          window.location.hash
-      );
+        // Verifica se já está na base do projeto ou na página inicial
+        if (
+          !path.startsWith("/projetoFindduo") ||
+          path === "/projetoFindduo/"
+        ) {
+          // Não faz nada se já está no caminho correto
+          return;
+        }
+
+        // Redireciona para o index.html do projeto, preservando rota, query e hash
+        window.location.replace(
+          "/projetoFindduo/index.html" +
+            window.location.search +
+            window.location.hash
+        );
+      })();
     </script>
   </body>
 </html>
