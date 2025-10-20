@@ -1,6 +1,11 @@
 import "./App.css";
 
-import { Routes, Route, Navigate } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 
 // hooks
@@ -48,56 +53,58 @@ function App() {
       <AuthProvider value={{ user }}>
         <Navbar />
         <div className="container">
-          <Routes>
-            <Route
-              path="/"
-              element={<Home />}
-            />
-            <Route
-              path="/about"
-              element={<About />}
-            />
-            <Route
-              path="/search"
-              element={<Search />}
-            />
-            <Route
-              path="/posts/:id"
-              element={<Post />}
-            />
-            <Route
-              path="/support"
-              element={<Support />}
-            />
-            <Route
-              path="/login"
-              element={!user ? <Login /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/register"
-              element={!user ? <Register /> : <Navigate to="/" />}
-            />
-            <Route
-              path="/dashboard/posts/edit/:id"
-              element={user ? <EditPost /> : <Navigate to="/login" />}
-            />
-            <Route
-              path="/posts/create"
-              element={user ? <CreatePost /> : <Navigate to="/login" />}
-            />
-            <Route
-              path="/dashboard"
-              element={user ? <Dashboard /> : <Navigate to="/login" />}
-            />
-            <Route
-              path="/profile"
-              element={user ? <Profile /> : <Navigate to="/login" />}
-            />
-            <Route
-              path="*"
-              element={<Navigate to="/" />}
-            />
-          </Routes>
+          <Router>
+            <Routes>
+              <Route
+                path="/"
+                element={<Home />}
+              />
+              <Route
+                path="/about"
+                element={<About />}
+              />
+              <Route
+                path="/search"
+                element={<Search />}
+              />
+              <Route
+                path="/posts/:id"
+                element={<Post />}
+              />
+              <Route
+                path="/support"
+                element={<Support />}
+              />
+              <Route
+                path="/login"
+                element={!user ? <Login /> : <Navigate to="/" />}
+              />
+              <Route
+                path="/register"
+                element={!user ? <Register /> : <Navigate to="/" />}
+              />
+              <Route
+                path="/dashboard/posts/edit/:id"
+                element={user ? <EditPost /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/posts/create"
+                element={user ? <CreatePost /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/dashboard"
+                element={user ? <Dashboard /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/profile"
+                element={user ? <Profile /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="*"
+                element={<Navigate to="/" />}
+              />
+            </Routes>
+          </Router>
         </div>
         <Footer />
       </AuthProvider>
