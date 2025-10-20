@@ -2,12 +2,14 @@ import styles from "./Login.module.css";
 
 import { useAuthentication } from "../../hooks/useAuthentication";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+
+  const emailInputRef = useRef(null);
 
   const { login, error: authError, loading } = useAuthentication();
 
@@ -27,6 +29,10 @@ const Login = () => {
   };
 
   useEffect(() => {
+    emailInputRef.current.focus(); // Foca no input quando o componente for montado
+  }, []);
+
+  useEffect(() => {
     if (authError) {
       setError(authError);
     }
@@ -40,6 +46,7 @@ const Login = () => {
         <label>
           <span>E-mail:</span>
           <input
+            ref={emailInputRef}
             type="email"
             name="email"
             required
