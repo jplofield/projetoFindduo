@@ -15,6 +15,7 @@
 .about p {
     color: #dadada;
     margin-bottom: 2em;
+    word-break: normal;
 }
 
 .about a {

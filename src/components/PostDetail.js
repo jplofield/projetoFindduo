@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
+import LikeButton from "./LikeButton";
 
 const PostDetail = ({ post }) => {
   // Estado local para armazenar a URL da foto de perfil do autor do post
@@ -68,12 +69,15 @@ const PostDetail = ({ post }) => {
           </p>
         ))}
       </div>
-      <Link
-        to={`/posts/${post.id}`}
-        className="btn btn-outline"
-      >
-        Ler
-      </Link>
+      <div className={styles.feedback}>
+        <LikeButton postId={post.id} /> {/* Usa o novo componente */}
+        <Link
+          to={`/posts/${post.id}`}
+          className={styles.comments}
+        >
+          Comentários
+        </Link>
+      </div>
     </div>
   );
 };

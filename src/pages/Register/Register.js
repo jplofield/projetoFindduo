@@ -1,7 +1,7 @@
 import { useAuthentication } from "../../hooks/useAuthentication";
 import styles from "./Register.module.css";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Register = () => {
   const [displayName, setDisplayName] = useState("");
@@ -11,6 +11,8 @@ const Register = () => {
   const [error, setError] = useState("");
 
   const { createUser, error: authError, loading } = useAuthentication();
+
+  const nameInputRef = useRef(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,6 +36,10 @@ const Register = () => {
   };
 
   useEffect(() => {
+    nameInputRef.current.focus();
+  });
+
+  useEffect(() => {
     if (authError) {
       setError(authError);
     }
@@ -47,6 +53,7 @@ const Register = () => {
         <label>
           <span>Nome:</span>
           <input
+            ref={nameInputRef}
             type="text"
             name="displayName"
             required

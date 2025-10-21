@@ -7,9 +7,10 @@ const About = () => {
     <div className={styles.about}>
       <h2>Sobre o Findduo</h2>
       <p>
-        Este projeto tem o objetivo de criar um site no qual os jogadores possam
-        encontrar outras pessoas para jogar e publicar suas conquistas nos campos
-        de batalha.
+        A proposta desta rede social é que a comunidade gamer tenha um espaço
+        para se conectar com outras pessoas, entendendo que há uma demanda
+        considerável quando se trata de achar alguém para jogar junto e
+        compartilhar experiências online.
       </p>
       <Link
         to="/posts/create"
