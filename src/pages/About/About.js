@@ -8,7 +8,7 @@ const About = () => {
       <h2>Sobre o Findduo</h2>
       <p>
         Este projeto tem o objetivo de criar um site no qual os jogadores possam
-        encontrar outras pessoas para jogar e postar suas conquistas nos campos
+        encontrar outras pessoas para jogar e publicar suas conquistas nos campos
         de batalha.
       </p>
       <Link
