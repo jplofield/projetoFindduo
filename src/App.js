@@ -1,7 +1,6 @@
 import "./App.css";
 
 import {
-  HashRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -53,7 +52,6 @@ function App() {
       <AuthProvider value={{ user }}>
         <Navbar />
         <div className="container">
-          <Router>
             <Routes>
               <Route
                 path="/"
@@ -104,7 +102,6 @@ function App() {
                 element={<Navigate to="/" />}
               />
             </Routes>
-          </Router>
         </div>
         <Footer />
       </AuthProvider>

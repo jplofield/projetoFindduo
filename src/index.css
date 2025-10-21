@@ -6,9 +6,22 @@ body {
   /* Configuração da imagem de fundo */
   background-image: url('./images/Fundo_ME.png'); /* Caminho para sua imagem */
   background-size: cover; /* Faz a imagem cobrir todo o fundo */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-position: 0 0; /* Centraliza a imagem */
+  animation: moverFundo 40s linear infinite; /* animação de fundo */
+  background-repeat: repeat; /* Evita repetição da imagem */
   background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+}
+
+@keyframes moverFundo {
+
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 1000px 1000px;
+  }
+
 }
 
 input::placeholder,
