@@ -12,7 +12,7 @@ const basename = process.env.NODE_ENV === "production" ? "/projetoFindduo" : "";
 
 root.render(
   <React.StrictMode>
-    <HashRouter basename={basename}>
+    <HashRouter>
       <App />
     </HashRouter>
   </React.StrictMode>
