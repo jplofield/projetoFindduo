@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/projetoFindduo/static/css/main.89136ec3.css",
-    "main.js": "/projetoFindduo/static/js/main.04d1fbc9.js",
+    "main.css": "/projetoFindduo/static/css/main.291fe6bc.css",
+    "main.js": "/projetoFindduo/static/js/main.f022acf6.js",
     "static/js/453.9ac09f07.chunk.js": "/projetoFindduo/static/js/453.9ac09f07.chunk.js",
     "static/media/Fundo_ME.png": "/projetoFindduo/static/media/Fundo_ME.f4a12edb86be551db222.png",
     "static/media/logo_dark.png": "/projetoFindduo/static/media/logo_dark.697dea51841d5f8eaf44.png",
     "index.html": "/projetoFindduo/index.html",
     "static/media/heart-regular.svg": "/projetoFindduo/static/media/heart-regular.7dce289406e8e4ac122939b1feda3208.svg",
     "static/media/heart-solid.svg": "/projetoFindduo/static/media/heart-solid.b6fc620690c7ec572fddd1dc8a0313bf.svg",
-    "main.89136ec3.css.map": "/projetoFindduo/static/css/main.89136ec3.css.map",
-    "main.04d1fbc9.js.map": "/projetoFindduo/static/js/main.04d1fbc9.js.map",
+    "main.291fe6bc.css.map": "/projetoFindduo/static/css/main.291fe6bc.css.map",
+    "main.f022acf6.js.map": "/projetoFindduo/static/js/main.f022acf6.js.map",
     "453.9ac09f07.chunk.js.map": "/projetoFindduo/static/js/453.9ac09f07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89136ec3.css",
-    "static/js/main.04d1fbc9.js"
+    "static/css/main.291fe6bc.css",
+    "static/js/main.f022acf6.js"
   ]
 }
