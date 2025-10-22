@@ -37,7 +37,7 @@ const Register = () => {
 
   useEffect(() => {
     nameInputRef.current.focus();
-  });
+  }, []);
 
   useEffect(() => {
     if (authError) {
