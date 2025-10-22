@@ -12,6 +12,11 @@ body {
   background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
 }
 
+body::before {
+  background-size: var(--tile-size) var(--tile-size);
+  animation: slideGrid calc(var(--bg-speed)) linear infinite;
+}
+
 @keyframes moverFundo {
 
   from {
@@ -22,6 +27,10 @@ body {
     background-position: 1000px 1000px;
   }
 
+}
+
+p {
+  font-size: var(--text); line-height: 1.5;
 }
 
 input::placeholder,
