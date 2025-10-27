@@ -112,27 +112,23 @@ textarea {
   border-radius: 0;
 }
 
-.btn.btn-outline {
+.btn.btn-outline-dark {
   background-color: transparent;
   border-radius: 0;
   color: #dadada;
-  border: 1px solid #000;
-  font-size: 0.9em;
+  border: 2px solid #000;
+  font-size: 0.7em;
 }
 
 .btn.btn-outline-light {
   background-color: transparent;
   border-radius: 0;
   color: #dadada;
-  border: 1px solid #dadada;
+  border: 2px solid #dadada;
+  font-size: 0.7em;
 }
 
-.btn:hover {
-  background-color: #0f730c;
-  color: #fff;
-}
-
-.btn.btn-outline:hover {
+.btn.btn-outline-dark:hover {
   background-color: #000;
 }
 
@@ -144,9 +140,9 @@ textarea {
   background-color: transparent;
   border-radius: 0;
   color: #dadada;
-  border: 1px solid #dadada;
-  height: 36px;
+  border: 2px solid #000;
   font-size: .7em;
+  height: auto;
 }
 
 .btn.btn-danger:hover {

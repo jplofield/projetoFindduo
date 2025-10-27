@@ -49,13 +49,13 @@ const Dashboard = () => {
                 <div>
                   <Link
                     to={`/posts/${post.id}`}
-                    className="btn btn-outline-light"
+                    className="btn btn-outline-dark"
                   >
                     Ver
                   </Link>
                   <Link
                     to={`posts/edit/${post.id}`}
-                    className="btn btn-outline-light"
+                    className="btn btn-outline-dark"
                   >
                     Editar
                   </Link>

@@ -1,10 +1,15 @@
 .dashboard {
+    margin: 2em;
+    padding-bottom: 2em;
+    border-radius: 10px;
     color: #dadada;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #313338;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
 }
 
 .dashboard h2 {
@@ -67,10 +72,10 @@
     font-size: 0.7em;
     background-color: transparent;
     border-radius: 0;
-    border: 1px solid #dadada;
+    border: 1px solid #000;
 }
 
 .post_row button:hover,
 .post_row a:hover {
-    background-color: #dadada;
+    background-color: #000;
 }

@@ -1,10 +1,20 @@
 .post_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;    /* Centraliza verticalmente */
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: 1fr;
+    place-items: center;
+    /*justify-content: center; /* Centraliza horizontalmente */
+    /*align-items: center;    /* Centraliza verticalmente */
     min-height: 100vh;      /* Faz o contêiner ocupar toda a altura da página */
     padding: 1em;           /* Espaçamento interno opcional */
+}
+
+@media (min-width: 640px) {
+  .posts-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .posts-container { grid-template-columns: repeat(3, 1fr); }
 }
 
 .post_detail {

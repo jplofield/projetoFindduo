@@ -101,11 +101,11 @@ const CreatePost = () => {
           />
         </label>
         {!response.loading && (
-          <button className="btn btn-outline">Publicar</button>
+          <button className="btn btn-outline-dark">Publicar</button>
         )}
         {response.loading && (
           <button
-            className="btn"
+            className="btn btn-outline-light"
             disabled
           >
             Aguarde...
