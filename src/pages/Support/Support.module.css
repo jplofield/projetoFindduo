@@ -1,0 +1,18 @@
+.support {
+    margin: 5em auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dadada;
+    background: #313338;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 800px;
+}
+
+.support p {
+    color: #dadada;
+    margin-bottom: 2em;
+}

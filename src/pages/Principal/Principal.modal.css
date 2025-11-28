@@ -1,0 +1,136 @@
+.principal {
+    margin: 5em auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dadada;
+    background: #313338;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 800px;
+}
+
+.principal p {
+    color: #dadada;
+    margin-bottom: 2em;
+}
+
+.Perfil_LOL {
+  max-width: 450px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: #313338;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.Perfil_LOL h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+.inputs input {
+  padding: 10px;
+  border-radius: 20px;
+  border: 10px; 
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.inputs input::placeholder {
+  color: #aaa;
+}
+
+.inputs button {
+  padding: 0.6em;
+  border: 3px solid #000000;
+  background-color: #313338;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.inputs button:hover {
+  background-color: #000000;
+}
+
+.error {
+  color: #ff5555;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.playerCard {
+  background-color: #272626;
+  padding: 1em;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 1em;
+}
+
+.profileIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #007acc;
+}
+
+.playerInfo h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.rankSection {
+  display: flex;
+  align-items: center;      /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  gap: 25px;                /* Espaço entre o ícone e as infos */
+  background-color: #1c1c1c;
+  padding: 1em;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.tierIcon {
+  width: 125px;              /* aumenta tamanho */
+  height: 125px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.25)); /* leve brilho */
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.rankInfo p {
+  text-align: left;
+  color: #ddd;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.regionSelect {
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #2a2a2a;
+  color: white;
+}

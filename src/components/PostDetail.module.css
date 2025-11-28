@@ -1,0 +1,80 @@
+.post_detail {
+    margin-bottom: 2em;
+    border: 2px solid #313338; /* Cor da borda */
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    padding: 1em; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    background-color: #313338; /* Cor de fundo para destacar o post */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animação ao interagir */
+    color: #dadada;
+}
+
+/* Efeito ao passar o mouse */
+.post_detail:hover {
+    transform: scale(1.02); /* Leve aumento no tamanho */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Intensifica a sombra */
+}
+
+.post_detail img {
+    max-width: 500px;
+}
+
+.post_detail h2 {
+    margin-bottom: .4em;
+}
+
+.post_detail .tags {
+    margin-bottom: 1.2em;
+    display: flex;
+}
+
+.tags p {
+    margin-right: .5em;
+}
+
+.tags span {
+    font-weight: bold;
+}
+
+.avatar {
+    width: 40px;                /* Tamanho da imagem */
+    height: 40px;               /* Tamanho da imagem */
+    border-radius: 50%;         /* Torna a imagem redonda */
+    object-fit: cover;          /* Ajusta a imagem sem distorcer */
+    margin-right: 10px;         /* Espaço entre a imagem e o nome */
+}
+
+.createdBy {
+    display: flex;              /* Alinha horizontalmente a foto e o nome */
+    align-items: center;        /* Alinha verticalmente no centro */
+    margin-bottom: 1em;         /* Espaço entre o cabeçalho e o conteúdo */
+}
+
+.username {
+    color: #dadada;             /* Cor do texto */
+    font-size: 1em;             /* Tamanho da fonte */
+    margin: 0;                  /* Remove margens extras */
+}
+
+  .feedback {
+    display: flex; /* Alinha os botões horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaço entre os botões */
+  }
+
+  .comments {
+    background-color: #313338;
+    color: #DADADA;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black; /* Remove a borda */
+    width: 120px;
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Adiciona transição suave */
+  }
+
+  .comments:hover {
+    background-color: black; /* Efeito ao passar o mouse */
+  }

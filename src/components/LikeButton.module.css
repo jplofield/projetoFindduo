@@ -1,0 +1,31 @@
+.likeButton {
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove as bordas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Alinha a imagem e o texto horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 5px; /* Espaço entre a imagem e o número de likes */
+    font-size: 1em;
+    font-family: inherit;
+    color: #DADADA;
+}
+
+.likeButton img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s ease, opacity 0.2s ease; 
+  }
+
+  .likeButton:hover img {
+    transform: scale(1.1);
+    background: none;
+  }
+
+  .likeButton.liked img {
+    opacity: 0.8;
+  }
+
+  .likeButton span {
+    background: transparent !important;
+}

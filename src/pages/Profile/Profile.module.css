@@ -1,0 +1,219 @@
+.profile {
+  margin: 3em auto; /* Centraliza horizontalmente e adiciona espaçamento superior */
+  padding: 1em; /* Espaçamento interno */
+  border: 2px solid #313338; /* Cor da borda */
+  border-radius: 10px; /* Arredonda os cantos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  background-color: #313338; /* Cor de fundo */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animação ao interagir */
+  color: #dadada; /* Cor do texto */
+  display: flex;
+  flex-direction: column; /* Muda para coluna para organizar o conteúdo verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  width: fit-content; /* Ajusta a largura ao conteúdo */
+}
+
+.profile img {
+  width: 100px; /* Tamanho da imagem de perfil */
+  height: 100px; /* Tamanho da imagem de perfil */
+  border-radius: 50%; /* Torna a imagem redonda */
+  object-fit: cover; /* Garante que a imagem preencha o espaço corretamente */
+}
+
+.profile button {
+  margin-top: 1em; /* Espaçamento acima do botão */
+  background-color: #313338;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 150px; /* Largura fixa do botão */
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile a:hover, button :hover {
+  background-color: #000;
+  color: #DADADA;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha o nome verticalmente */
+}
+
+.user-info p {
+  margin: 0.3em 0; /* Espaçamento entre os textos */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Garante que o modal fique acima do conteúdo */
+  background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+}
+
+
+/* Modal - conteúdo */
+.modal_content {
+  background: #313338; /* Fundo do modal */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra */
+  color: #dadada;
+  z-index: 1010; /* Garante que o conteúdo do modal esteja acima do fundo borrado */
+}
+
+.modal h3 {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.modal_content input {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #1E1F22;
+  border-radius: 16px;
+  background-color: #1E1F22;
+  color: #dadada;
+}
+
+.modal_content button {
+  margin-top: .2em;
+  background-color: transparent;
+  border-radius: 0;
+  color: #dadada;
+  border: 1px solid #000;
+  padding: 7px 30px;
+}
+
+.modal_content button:hover {
+  background-color: #000;
+}
+
+.Perfil_LOL {
+  max-width: 450px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.Perfil_LOL h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+.inputs input {
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.inputs input::placeholder {
+  color: #aaa;
+}
+
+.inputs button {
+  padding: 0.6em;
+  border-radius: 8px;
+  border: none;
+  background-color: #007acc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.inputs button:hover {
+  background-color: #005fa3;
+}
+
+.error {
+  color: #ff5555;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.playerCard {
+  background-color: #2b2b2b;
+  padding: 1em;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 1em;
+}
+
+.profileIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #007acc;
+}
+
+.playerInfo h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.rankSection {
+  display: flex;
+  align-items: center;      /* Centraliza verticalmente */
+  justify-content: center;  /* Centraliza horizontalmente */
+  gap: 25px;                /* Espaço entre o ícone e as infos */
+  background-color: #1c1c1c;
+  padding: 1em;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.tierIcon {
+  width: 125px;              /* aumenta tamanho */
+  height: 125px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.25)); /* leve brilho */
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.rankInfo p {
+  text-align: left;
+  color: #ddd;
+  font-size: 1em;
+  line-height: 1.5;
+}

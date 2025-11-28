@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 15) 0px -2px 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em;
+    background-color: #313338;
+    color: #DADADA;
+}
+
+.brand {
+    font-size: 1.2em;
+}
+
+.brand img {
+    width: 30%;                
+    height: 30%;
+    border-radius: 20%;
+}
+
+.links_list {
+    display: flex;
+    list-style: none;
+    align-items: center; /* Garante o alinhamento vertical de todos os itens */
+    margin: 0;
+    padding: 0;
+}
+
+.links_list li {
+    margin-right: 1em; /* Espaçamento entre os itens de lista */
+}
+
+.links_list li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item */
+}
+
+/* Estilo base para links e botões */
+.links_list li a,
+.links_list li button {
+    display: inline-flex; /* Garante um layout flexível e alinhado */
+    align-items: center;
+    justify-content: center;
+    padding: 0.4em 0.8em; /* Mesmos valores de padding */
+    color: #DADADA;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: inherit; /* Garante a mesma fonte do contexto */
+    background: none; /* Remove fundo padrão */
+    border: none; /* Remove bordas padrão */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo de largura */
+    cursor: pointer; /* Garante o comportamento visual de botão/link */
+    width: auto; /* Garante o mesmo ajuste automático de largura */
+}
+
+/* Efeito hover ativo */
+.links_list li a:hover, 
+.links_list li a.active,
+.links_list li button:hover {
+    background-color: #000; /* Fundo ao passar o mouse */
+    color: #DADADA;
+}
+
+/* Remove o comportamento padrão de foco para evitar "outline" inconsistente */
+.links_list li button:focus {
+    outline: none;
+}

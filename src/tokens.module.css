@@ -1,0 +1,20 @@
+:root{
+  --gap-xs: 6px;
+  --gap-sm: 12px;
+  --gap: 16px;
+  --gap-lg: 24px;
+  --radius: 12px;
+
+  --text-sm: 0.875rem;
+  --text: 1rem;
+  --text-lg: 1.125rem;
+
+  --primary: #2563eb;
+  --bg: #0f1724;
+  --surface: #1e1f22;
+  --muted: #94a3b8;
+}
+
+/* breakpoints mobile-first */
+@media (min-width: 640px) { /* sm / tablet */ :root{ --max-cols: 2; } }
+@media (min-width: 1024px) { /* lg / desktop */ :root{ --max-cols: 3; } }
